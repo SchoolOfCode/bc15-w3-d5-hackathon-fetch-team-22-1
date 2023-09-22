@@ -45,6 +45,8 @@ async function retrieveGeo(cityIn) {
     let weatherCode = document.getElementById("weatherCode")
     //location 
     let locationTxt = document.getElementById("location")
+    //info div for setting background pic
+    let infoDiv = document.getElementById("info")
 
 //set the innerText of each of the above to the relevent info from the API
   
@@ -63,7 +65,8 @@ function setWeather(input){
     console.log(weathCode)
     for(let i = 0; i < weatherCodeDescriptAndImgs.length ; i++){
     if(weatherCodeDescriptAndImgs[i].id.includes(weathCode)){
-    weatherCode.innerText = weatherCodeDescriptAndImgs[i].description}
+    weatherCode.innerText = weatherCodeDescriptAndImgs[i].description
+    infoDiv.style.backgroundImage = `url(${weatherCodeDescriptAndImgs[i].img})`}
     }
     //location
 
