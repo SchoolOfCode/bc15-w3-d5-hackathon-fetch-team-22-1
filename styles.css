@@ -1,22 +1,24 @@
 .minMax {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     background-color: lightblue;
-    border-radius: 50%;
+    border-radius: 100px;
     display: inline-block;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 5%;
 
 }
 
 .local {
     height: 60px;
     background-color: lightblue;
-    border-radius: 5%;
-    width: 90%;
+    border-radius: 10px;
+    width: 50%;
     text-align: center;
     padding-top: 3%;
-    
+    margin-left: 20%;
+    margin-top: 35px
+       
 
 }
 
@@ -26,24 +28,28 @@
     grid-gap: 20px;
     height: 100%;
     border-style: double;
-   
+    
+      
 }
 
 #temp{
     background-image: url("mountain.jpeg");
     height: 100%;
+    width: 95%;
 }
 
 h1{
     margin-top: 50px;
     text-align: center;
+    font-size: 40px;
 }
 
 #minMaxTemp {
     align-items: center;
-    margin-top: 50%
+    margin-top: 35%;
+    margin-left: 100px;
 }
 
 .minMax {
-    margin-left: 20%;
+    margin-left: 23%;
 }
