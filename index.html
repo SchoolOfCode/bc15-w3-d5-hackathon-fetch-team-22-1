@@ -10,17 +10,19 @@
 <body>
 <div id="todayInfo">
     <div id="temp">
-        <h1>Temp</h1>
+        <h1 id="tempTxt">Temp</h1>
         <div id="minMaxTemp">
-            <p class="minMax">Max Temp</p>
-            <p class="minMax">Min Temp</p>
+            <p id="maxTemp" class="minMax">Max Temp</p>
+            <p id="minTemp" class="minMax">Min Temp</p>
           </div>
      </div>
     <div id="info">
+        <input placeholder="Enter city" id="locationIn"/>
+        <button type="button" id="inputBtn">Go</button>
         <h2 class="local" id="location">Location</h2>
         <h2 class="local" id="precip">Precipitation</h2>
         <h2 class="local" id="windSpeed">Wind Speed</h2>
-        <h2 class="local" id="humidity">Humidity</h2>
+        <h2 class="local" id="weatherCode">Weather Code</h2>
     </div>
     <script src="main.js"></script>
 </body>
