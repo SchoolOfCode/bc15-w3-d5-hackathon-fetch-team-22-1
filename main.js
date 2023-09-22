@@ -59,8 +59,13 @@ async function retrieveGeo(cityIn) {
     //wind speed
     windSpeed.innerText = input.daily.windspeed_10m_max[0] + input.daily_units.windspeed_10m_max
     //weathercode
-    weatherCode.innerText =  input.daily.weathercode[0]
-    //location 
+    let weathCode = input.daily.weathercode[0]
+    console.log(weathCode)
+    for(let i = 0; i < weatherCodeDescriptAndImgs.length ; i++){
+    if(weatherCodeDescriptAndImgs[i].id.includes(weathCode)){
+    weatherCode.innerText = weatherCodeDescriptAndImgs[i].description}
+    }
+    //location
 
 }
 
@@ -74,38 +79,44 @@ function inputLocation(){
     locationTxt.innerText = locationInput.value
 }
 
-let weatherCodes =[
-    {id: 0,
-    description: "Clear sky", 
+let weatherCodeDescriptAndImgs =[
+    {id: [0],
+    description: "Clear sky",
     img:""},
-    {id: 1,
+    {id: [1, 2, 3],
     description: "Mainly clear, partly cloudy, and overcast",
     img:""},
-    {id: 2,
+    {id: [45, 48],
     description: "Fog and depositing rime fog",
     img:""},
-    {id: 3,
+    {id: [51, 53, 55],
     description: "Drizzle: Light, moderate, and dense intensity",
     img:""},
-    {id: 4,
+    {id: [56, 57],
     description: "Freezing Drizzle: Light and dense intensity",
     img:""},
-    {id: 5,
+    {id: [61, 63, 65],
     description: "Rain: Slight, moderate and heavy intensity",
     img:""},
-    {id: 6,
+    {id: [66, 67],
+    description: "Freezing Rain: Light and heavy intensity",
+    img:""},
+    {id: [71, 73, 75],
     description: "Snow fall: Slight, moderate, and heavy intensity",
     img:""},
-    {id: 7,
+    {id: [77],
     description: "Snow grains",
     img:""},
-    {id: 8,
+    {id: [80, 81, 82],
     description: "Rain showers: Slight, moderate, and violent",
     img:""},
-    {id: 9,
+    {id: [85, 86],
     description: "Snow showers slight and heavy",
     img:""},
-    {id: 9,
-    description: "Snow showers slight and heavy",
+    {id: [95],
+    description: "Thunderstorm: Slight or moderate",
+    img:""},
+    {id: [96, 99],
+    description: "Thunderstorm with slight and heavy hail",
     img:""},
 ]
