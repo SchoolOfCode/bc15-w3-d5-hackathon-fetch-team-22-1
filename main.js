@@ -43,6 +43,8 @@ async function retrieveGeo(cityIn) {
     let windSpeed = document.getElementById("windSpeed")
     //humidity
     let weatherCode = document.getElementById("weatherCode")
+    //location 
+    let locationTxt = document.getElementById("location")
 
 //set the innerText of each of the above to the relevent info from the API
   
@@ -58,6 +60,8 @@ async function retrieveGeo(cityIn) {
     windSpeed.innerText = input.daily.windspeed_10m_max[0] + input.daily_units.windspeed_10m_max
     //weathercode
     weatherCode.innerText =  input.daily.weathercode[0]
+    //location 
+
 }
 
 let locationBtn = document.getElementById("inputBtn")
@@ -66,4 +70,6 @@ locationBtn.addEventListener("click", inputLocation)
 
 function inputLocation(){
     retrieveGeo(locationInput.value)
+
+    locationTxt.innerText = locationInput.value
 }
