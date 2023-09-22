@@ -1,6 +1,22 @@
-#temp{
-    border-radius: 50;
+.minMax {
+    height: 60px;
+    width: 60px;
+    background-color: lightblue;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 2%;
+
 }
-.local{
+
+.local {
+    height: 60px;
+    width: max-content;
+    background-color: lightblue;
+    border-radius: 20%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 3%;
+    
 
 }
