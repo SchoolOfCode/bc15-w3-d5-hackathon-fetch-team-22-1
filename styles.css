@@ -1,5 +1,5 @@
 .minMax {
-    height: 80px;
+    height: 40px;
     width: 80px;
     background-color: lightblue;
     border-radius: 100px;
@@ -20,6 +20,16 @@
     margin-top: 35px
        
 
+}
+#locationIn{
+    margin-top: 15px;
+    margin-left: 35%;
+    height: 35px;
+    width: 150px;
+}
+#inputBtn {
+    height: 35px;
+    
 }
 
 #todayInfo{
@@ -47,10 +57,11 @@ h1{
 #minMaxTemp {
     align-items: center;
     margin-top: 35%;
-    margin-left: 10%x;
+    margin-left: 100px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .minMax {
     margin-left: 23%;
-    padding-top: 0px;
 }
