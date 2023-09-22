@@ -52,7 +52,7 @@ async function retrieveGeo(cityIn) {
   
 function setWeather(input){
     //Temp
-    temp.innerText = (input.daily.temperature_2m_max[0] + input.daily.temperature_2m_min[0])/2 + input.daily_units.temperature_2m_max
+    temp.innerText = ((input.daily.temperature_2m_max[0] + input.daily.temperature_2m_min[0])/2).toFixed(2) + input.daily_units.temperature_2m_max
     //Max and min temps
     maxTemp.innerText = input.daily.temperature_2m_max[0] + input.daily_units.temperature_2m_max
     minTemp.innerText = input.daily.temperature_2m_min[0] + input.daily_units.temperature_2m_min
@@ -85,41 +85,41 @@ function inputLocation(){
 let weatherCodeDescriptAndImgs =[
     {id: [0],
     description: "Clear sky",
-    img:""},
+    img:"clearSkies.jpg"},
     {id: [1, 2, 3],
     description: "Mainly clear, partly cloudy, and overcast",
-    img:""},
+    img:"MainlyClear.jpg"},
     {id: [45, 48],
     description: "Fog and depositing rime fog",
-    img:""},
+    img:"Fog.jpg"},
     {id: [51, 53, 55],
     description: "Drizzle: Light, moderate, and dense intensity",
-    img:""},
+    img:"drizzle.jpg"},
     {id: [56, 57],
     description: "Freezing Drizzle: Light and dense intensity",
-    img:""},
+    img:"freezingDrizzle.jpg"},
     {id: [61, 63, 65],
     description: "Rain: Slight, moderate and heavy intensity",
-    img:""},
+    img:"heavyRain.jpg"},
     {id: [66, 67],
     description: "Freezing Rain: Light and heavy intensity",
-    img:""},
+    img:"rainShower.jpeg"},
     {id: [71, 73, 75],
     description: "Snow fall: Slight, moderate, and heavy intensity",
-    img:""},
+    img:"snowShower.jpeg"},
     {id: [77],
     description: "Snow grains",
-    img:""},
+    img:"snowGrains.jpeg"},
     {id: [80, 81, 82],
     description: "Rain showers: Slight, moderate, and violent",
-    img:""},
+    img:"rainShower.jpeg"},
     {id: [85, 86],
     description: "Snow showers slight and heavy",
-    img:""},
+    img:"snowShower.jpeg"},
     {id: [95],
     description: "Thunderstorm: Slight or moderate",
-    img:""},
+    img:"lightThunder.jpeg"},
     {id: [96, 99],
     description: "Thunderstorm with slight and heavy hail",
-    img:""},
+    img:"thunder.png"},
 ]
