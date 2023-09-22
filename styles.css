@@ -1,11 +1,11 @@
 .minMax {
-    height: 40px;
+    height: 80px;
     width: 80px;
     background-color: lightblue;
     border-radius: 100px;
     display: inline-block;
     text-align: center;
-    padding-top: 5%;
+    
 
 }
 
@@ -20,6 +20,9 @@
     margin-top: 35px
        
 
+}
+#info {
+    background-size: cover; 
 }
 #locationIn{
     margin-top: 15px;
@@ -37,15 +40,16 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     height: 100%;
-    border-style: double;
-    
+   
+  
       
 }
 
 #temp{
     background-image: url("mountain.jpeg");
     height: 100%;
-    width: 95%;
+    width: 100%;
+    background-size: cover; 
 }
 
 h1{
