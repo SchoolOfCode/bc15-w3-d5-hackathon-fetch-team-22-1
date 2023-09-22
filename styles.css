@@ -11,12 +11,39 @@
 
 .local {
     height: 60px;
-    width: max-content;
     background-color: lightblue;
-    border-radius: 20%;
-    display: inline-block;
+    border-radius: 5%;
+    width: 90%;
     text-align: center;
     padding-top: 3%;
     
 
+}
+
+#todayInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    height: 100%;
+    border-style: double;
+   
+}
+
+#temp{
+    background-image: url("mountain.jpeg");
+    height: 100%;
+}
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#minMaxTemp {
+    align-items: center;
+    margin-top: 50%
+}
+
+.minMax {
+    margin-left: 20%;
 }
